@@ -1,0 +1,716 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- SEO Meta Tags -->
+    <meta name="keywords"
+        content="EVHEMANTH SAI, EVHEMANTH, EV HEMANTH, EVHEMANT, EVEMANTH SAI, EV HEMANTH SAI, EVHEMANTH S, EV HEMANTH S, EVTECH Founder, EVTECH CEO, AI Specialist, Software Developer">
+    <meta name="author" content="EVHEMANTH SAI">
+
+    <title>EVHEMANTH SAI: Founder & CEO of EVTECH GROUPS | AI Entrepreneur</title>
+    <meta name="description"
+        content="EVHEMANTH SAI is a 17-year-old AI entrepreneur and Founder/CEO of EVTECH GROUPS, building the future of education technology through artificial intelligence and innovative solutions.">
+    <meta name="robots" content="follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large">
+    <link rel="canonical" href="https://evhemanthsai.com/">
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:locale" content="en_US">
+    <meta property="og:type" content="Profile">
+    <meta property="og:title" content="EVHEMANTH SAI: Founder & CEO of EVTECH GROUPS | AI Entrepreneur">
+    <meta property="og:description"
+        content="17-year-old AI entrepreneur and Founder/CEO of EVTECH GROUPS, building the future of education technology.">
+    <meta property="og:url" content="https://evhemanthsai.com/">
+    <meta property="og:site_name" content="EVHEMANTH SAI">
+    <meta property="og:image" content="https://evhemanthsai.com/profile.jpg">
+    <meta property="og:image:secure_url" content="https://evhemanthsai.com/profile.jpg">
+    <meta property="Profile:first_name" content="EVHEMANTH">
+    <meta property="Profile:last_name" content="SAI">
+    <meta property="Profile:username" content="EVHEMANTH SAI">
+    <meta property="article:published_time" content="2025-02-28T12:00:00+00:00">
+    <meta property="article:modified_time" content="2025-02-28T12:00:00+00:00">
+
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="EVHEMANTH SAI: Founder & CEO of EVTECH GROUPS | AI Entrepreneur">
+    <meta name="twitter:description"
+        content="17-year-old AI entrepreneur and Founder/CEO of EVTECH GROUPS, building the future of education technology.">
+    <meta name="twitter:site" content="@evhemanthsai">
+    <meta name="twitter:creator" content="@evhemanthsai">
+    <meta name="twitter:image" content="https://evhemanthsai.com/profile.jpg">
+    <meta name="twitter:image:alt" content="EVHEMANTH SAI">
+    <meta name="twitter:label1" content="Founder & CEO">
+    <meta name="twitter:data1" content="EVTECH GROUPS">
+
+    <!-- Author & Organization -->
+    <meta name="author" content="EVHEMANTH SAI">
+    <meta property="article:author" content="https://evhemanthsai.com">
+    <meta property="article:publisher" content="https://evtechgroups.com/">
+
+    <!-- Standard Favicon -->
+    <link rel="icon" type="image/x-icon" href="https://evhemanthsai.com/logo.ico">
+
+    <!-- Apple Touch Icon (For iOS Home Screen) -->
+    <link rel="apple-touch-icon" sizes="180x180" href="https://evhemanthsai.com/logo.png">
+
+    <!-- Android Chrome Icons -->
+    <link rel="icon" sizes="192x192" href="https://evhemanthsai.comlogo.png">
+    <link rel="icon" sizes="512x512" href="https://evhemanthsai.com/logo.png">
+
+    <!-- Microsoft Tile Icon (Windows) -->
+    <meta name="msapplication-TileImage" content="https://evhemanthsai.com/logo.png">
+
+    <!-- Theme Color (For Mobile Browsers) -->
+    <meta name="theme-color" content="#000000">
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 75%;
+            max-width: 300px;
+            background: #111;
+            color: white !important;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            z-index: 50;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out;
+            z-index: 40;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .glow-text {
+            text-shadow: 0 0 10px rgba(79, 209, 197, 0.7);
+        }
+
+        .feature-card {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(79, 209, 197, 0.2);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(79, 209, 197, 0.1);
+            border-color: rgba(79, 209, 197, 0.5);
+        }
+
+        /* Wikipedia Color Scheme */
+        :root {
+            --wikipedia-bg: #f6f6f6;
+            --wikipedia-content-bg: #ffffff;
+            --wikipedia-border: #a7d7f9;
+            --wikipedia-link: #0645ad;
+            --wikipedia-link-visited: #551a8b;
+            --wikipedia-link-hover: #0b0080;
+            --wikipedia-text: #202122;
+            --wikipedia-heading: #54595d;
+            --wikipedia-sidebar-bg: #f8f9fa;
+            --wikipedia-table-header: #eaecf0;
+            --wikipedia-table-border: #a2a9b1;
+            --wikipedia-infobox-bg: #f8f9fa;
+            --wikipedia-infobox-border: #aaa;
+        }
+
+        /* Apply Wikipedia styles only to the container */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 20px;
+            background-color: var(--wikipedia-content-bg);
+            box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+            color: var(--wikipedia-text);
+            line-height: 1.6;
+            font-size: 0.875rem;
+            font-family: 'Linux Libertine', 'Georgia', 'Times', serif;
+            margin-top: 80px;
+            /* Added to account for fixed navbar */
+        }
+
+        .container header {
+            background-color: var(--wikipedia-content-bg);
+            padding: 1rem 0;
+            border-bottom: 1px solid var(--wikipedia-border);
+        }
+
+        .container .header-content {
+            display: flex;
+            align-items: center;
+        }
+
+        .container .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 2px;
+            border: 1px solid var(--wikipedia-border);
+            object-fit: cover;
+            margin-right: 1.5rem;
+        }
+
+        .container .header-text h1 {
+            font-size: 1.7rem;
+            font-weight: normal;
+            color: var(--wikipedia-text);
+            border-bottom: 1px solid var(--wikipedia-border);
+            padding-bottom: 0.25rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .container .header-text p {
+            font-size: 0.875rem;
+            color: var(--wikipedia-heading);
+            margin-bottom: 0.5rem;
+        }
+
+        .container .header-text .title {
+            font-style: italic;
+        }
+
+        .container main {
+            padding: 1rem 0;
+        }
+
+        .container .infobox {
+            float: right;
+            clear: right;
+            margin: 0.5rem 0 1rem 1rem;
+            padding: 0.5rem;
+            width: 22em;
+            background-color: var(--wikipedia-infobox-bg);
+            border: 1px solid var(--wikipedia-infobox-border);
+            font-size: 0.875rem;
+        }
+
+        .container .infobox-title {
+            text-align: center;
+            font-size: 1.2rem;
+            font-weight: bold;
+            background-color: var(--wikipedia-border);
+            padding: 0.4rem;
+            margin: -0.5rem -0.5rem 0.5rem -0.5rem;
+        }
+
+        .container .infobox-image {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            margin-bottom: 0.5rem;
+        }
+
+        .container .infobox-image img {
+            max-width: 100%;
+            height: auto;
+        }
+
+        .container .infobox-data {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        .container .infobox-data th {
+            text-align: left;
+            vertical-align: top;
+            padding: 0.3rem 0.5rem 0.3rem 0;
+            width: 35%;
+        }
+
+        .container .infobox-data td {
+            vertical-align: top;
+            padding: 0.3rem 0;
+        }
+
+        .container .infobox-label {
+            font-weight: bold;
+        }
+
+        .container h2 {
+            font-size: 1.5rem;
+            font-weight: normal;
+            color: var(--wikipedia-text);
+            border-bottom: 1px solid var(--wikipedia-border);
+            padding-bottom: 0.25rem;
+            margin: 1rem 0 0.75rem 0;
+            overflow: hidden;
+        }
+
+        .container h3 {
+            font-size: 1.2rem;
+            font-weight: bold;
+            color: var(--wikipedia-text);
+            margin: 0.75rem 0 0.5rem 0;
+        }
+
+        .container p {
+            margin-bottom: 0.75rem;
+            line-height: 1.6;
+        }
+
+        .container a {
+            color: var(--wikipedia-link);
+            text-decoration: none;
+        }
+
+        .container a:visited {
+            color: var(--wikipedia-link-visited);
+        }
+
+        .container a:hover {
+            color: var(--wikipedia-link-hover);
+            text-decoration: underline;
+        }
+
+        .container ul,
+        .container ol {
+            margin: 0.5rem 0 0.75rem 1.5rem;
+        }
+
+        .container li {
+            margin-bottom: 0.25rem;
+        }
+
+        .container .hatnote {
+            font-style: italic;
+            padding: 0.1rem 0.5rem;
+            margin-bottom: 0.5rem;
+            background-color: var(--wikipedia-sidebar-bg);
+            border-left: 2px solid var(--wikipedia-border);
+        }
+
+        .container .references {
+            font-size: 0.85rem;
+        }
+
+        .container .external-links {
+            margin-top: 1rem;
+        }
+
+        .container .external-links h2 {
+            font-size: 1.2rem;
+        }
+
+        .container .external-links ul {
+            list-style-type: none;
+            margin-left: 0;
+            column-count: 2;
+        }
+
+        .container .external-links li {
+            margin-bottom: 0.5rem;
+        }
+
+        .container footer {
+            margin-top: 1rem;
+            padding: 1rem 0;
+            border-top: 1px solid var(--wikipedia-border);
+            font-size: 0.75rem;
+            color: var(--wikipedia-heading);
+        }
+
+        @media (max-width: 768px) {
+            .container .header-content {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .container .profile-image {
+                margin: 0 auto 1rem auto;
+                float: none;
+            }
+
+            .container .infobox {
+                float: none;
+                width: 100%;
+                margin: 1rem 0;
+            }
+
+            .container .external-links ul {
+                column-count: 1;
+            }
+        }
+    </style>
+
+
+    <!-- Schema.org markup -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": ["Person", "PublicFigure"],
+      "@id": "https://evhemanthsai.com/#evhemanth",
+      "name": "EVHEMANTH SAI",
+      "alternateName": ["Ellanuru Venkata Hemanth Sai"],
+      "description": "17-year-old AI entrepreneur and Founder/CEO of EVTECH GROUPS, building the future of education technology.",
+      "url": "https://evhemanthsai.com",
+      "image": {
+        "@type": "ImageObject",
+        "url": "https://evhemanthsai.com/profile.jpg",
+        "width": 1200,
+        "height": 1200,
+        "caption": "Official portrait of EVHEMANTH SAI"
+      },
+      "jobTitle": "Founder & CEO of EVTECH GROUPS",
+      "worksFor": {
+        "@type": "Organization",
+        "name": "EVTECH GROUPS",
+        "url": "https://evtechgroups.com",
+        "logo": "https://evtechgroups.com/logo.png",
+        "foundingDate": "2023",
+        "founder": {
+          "@type": "Person",
+          "name": "EVHEMANTH SAI"
+        }
+      },
+      "sameAs": [
+        "https://linkedin.com/in/evhemanthsai",
+        "https://twitter.com/evhemanthsai",
+        "https://github.com/evhemanthsai",
+        "https://instagram.com/evhemanthsai",
+        "https://www.wikidata.org/wiki/Q132735948",
+        "https://www.crunchbase.com/person/ellanuru-venkata-hemanth-sai"
+      ],
+      "birthDate": "2007-11-29",
+      "birthPlace": {
+        "@type": "Place",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Proddatur",
+          "addressRegion": "Andhra Pradesh",
+          "addressCountry": "IN"
+        }
+      },
+      "knowsAbout": [
+        "Artificial Intelligence",
+        "Machine Learning",
+        "Educational Technology",
+        "Startup Development"
+      ],
+      "hasOccupation": {
+        "@type": "Occupation",
+        "name": "AI Entrepreneur",
+        "description": "Developing AI-powered educational tools and automation solutions",
+        "skills": "Python, TensorFlow, NLP, Computer Vision"
+      },
+      "subjectOf": [
+        {
+          "@type": "Article",
+          "headline": "17-Year-Old Founder EVHEMANTH SAI Builds AI Education Platform",
+          "url": "https://example.com/featured-article"
+        }
+      ],
+      "award": [
+        "Recognized on Google as an Entrepreneur",
+        "Invited to GSEA (Global Student Entrepreneur Awards)"
+      ],
+      "alumniOf": {
+        "@type": "EducationalOrganization",
+        "name": "DAV HIGH SCHOOL, RTPP",
+        "url": "https://davrtpp.org"
+      },
+      "contactPoint": {
+        "@type": "ContactPoint",
+        "email": "contact@evhemanthsai.com",
+        "contactType": "business inquiries",
+        "availableLanguage": ["English", "Telugu"]
+      },
+      "nationality": {
+        "@type": "Country",
+        "name": "India"
+      },
+      "parents": [
+        {
+          "@type": "Person",
+          "name": "Maheshwarla Nagaraju"
+        },
+        {
+          "@type": "Person",
+          "name": "Jinka Prasanna Lakshmi"
+        }
+      ],
+      "performerIn": {
+        "@type": "Event",
+        "name": "AI in Education Summit 2023",
+        "startDate": "2023-11-15",
+        "location": {
+          "@type": "Place",
+          "address": {
+            "@type": "PostalAddress",
+            "addressLocality": "Hyderabad",
+            "addressCountry": "India"
+          }
+        }
+      },
+      "publishingPrinciples": "https://evhemanthsai.com/ethics"
+    }
+  </script>
+
+    <!-- Breadcrumbs -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/", 
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem", 
+          "position": 1,
+          "name": "EVHEMANTH SAI",
+          "item": "https://evhemanthsai.com"  
+        },
+        {
+          "@type": "ListItem", 
+          "position": 2, 
+          "name": "About EVHEMANTH SAI",
+          "item": "https://evhemanthsai.com/about"  
+        }
+      ]
+    }
+  </script>
+
+    <!-- Website schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org/",
+      "@type": "WebSite",
+      "name": "EVHEMANTH SAI: Founder of EVTECH GROUPS",
+      "url": "https://evhemanthsai.com",
+      "potentialAction": {
+        "@type": "SearchAction",
+        "target": "{search_term_string}",
+        "query-input": "required name=search_term_string"
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-black">
+    <nav class="flex justify-between items-center px-6 md:px-10 py-4 bg-gray-900 fixed top-0 left-0 right-0 z-50">
+        <a href="../" class="flex items-center space-x-3">
+            <img src="https://evhemanthsai.com/logo.png" alt="EVHEMANTH SAI Logo"
+                class="w-10 h-10 rounded-full object-cover">
+            <div>
+                <h1 class="text-lg font-bold text-cyan-400">EVHEMANTH SAI</h1>
+                <p class="text-sm text-gray-400">Founder & CEO of EVTECH GROUPS</p>
+            </div>
+        </a>
+        <button class="md:hidden text-cyan-400" id="menuToggle">
+            <i data-lucide="menu"></i>
+        </button>
+        <ul class="hidden md:flex space-x-6 font-medium text-gray-300">
+            <li><a href="../about/" class="hover:text-cyan-400">About</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Media Kit</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Projects</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Tools</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Events</a></li>
+            <li><a href="#" class="hover:text-cyan-400">Consulting</a></li>
+        </ul>
+        <a href="#" class="hidden md:block bg-cyan-400 text-black px-4 py-2 rounded-lg hover:bg-cyan-500">
+            Join My Network
+        </a>
+    </nav>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div id="mobileMenu" class="mobile-menu">
+        <button class="absolute top-6 right-6 text-cyan-400" id="closeMenu">
+            <i data-lucide="x"></i>
+        </button>
+        <a href="../about/" class="hover:text-cyan-400">About</a>
+        <a href="#" class="hover:text-cyan-400">Media Kit</a>
+        <a href="#" class="hover:text-cyan-400">Projects</a>
+        <a href="#" class="hover:text-cyan-400">Tools</a>
+        <a href="#" class="hover:text-cyan-400">Events</a>
+        <a href="#" class="hover:text-cyan-400">Consulting</a>
+        <a href="#" class="bg-cyan-400 text-black px-6 py-3 rounded-lg hover:bg-cyan-500">
+            Join My Network
+        </a>
+    </div>
+
+    <div class="container">
+        <header>
+            <div class="header-content">
+                <img src="../profile.png" alt="Portrait of EVHEMANTH SAI" class="profile-image">
+                <div class="header-text">
+                    <h1>EVHEMANTH SAI</h1>
+                    <p class="title">Founder & CEO of EVTECH GROUPS</p>
+                </div>
+            </div>
+        </header>
+
+        <main>
+            <aside class="infobox">
+                <div class="infobox-title">EVHEMANTH SAI</div>
+                <div class="infobox-image">
+                    <img src="../profile.png" alt="Portrait of EVHEMANTH SAI" width="200">
+                </div>
+                <table class="infobox-data">
+                    <tr>
+                        <th class="infobox-label">Born</th>
+                        <td>Ellanuru Venkata Hemanth Sai<br>November 29, 2007<br>Proddatur, Andhra Pradesh, India</td>
+                    </tr>
+                    <tr>
+                        <th class="infobox-label">Nationality</th>
+                        <td>Indian</td>
+                    </tr>
+                    <tr>
+                        <th class="infobox-label">Occupation</th>
+                        <td>AI Entrepreneur</td>
+                    </tr>
+                    <tr>
+                        <th class="infobox-label">Years active</th>
+                        <td>2023–present</td>
+                    </tr>
+                    <tr>
+                        <th class="infobox-label">Known for</th>
+                        <td>Founding EVTECH GROUPS</td>
+                    </tr>
+                    <tr>
+                        <th class="infobox-label">Title</th>
+                        <td>Founder & CEO</td>
+                    </tr>
+                    <tr>
+                        <th class="infobox-label">Organization</th>
+                        <td>EVTECH GROUPS</td>
+                    </tr>
+                    <tr>
+                        <th class="infobox-label">Parents</th>
+                        <td>Maheshwarla Nagaraju<br>Jinka Prasanna Lakshmi</td>
+                    </tr>
+                </table>
+            </aside>
+
+            <p><strong>EVHEMANTH SAI</strong> (born November 29, 2007), also known as <strong>Ellanuru Venkata Hemanth
+                    Sai</strong>, is an Indian AI entrepreneur and the founder and CEO of <a
+                    href="https://evtechgroups.com">EVTECH GROUPS</a>, a company focused on educational technology
+                solutions.</p>
+
+            <h2>Early life and education</h2>
+            <p>EVHEMANTH SAI was born in Proddatur, Andhra Pradesh, India to Maheshwarla Nagaraju and Jinka Prasanna
+                Lakshmi. He completed his secondary education at <a href="https://davrtpp.org">DAV HIGH SCHOOL,
+                    RTPP</a>, where he developed an interest in artificial intelligence and computer programming.</p>
+
+            <h2>Career</h2>
+            <p>In 2023, at age 16, EVHEMANTH founded EVTECH GROUPS, an educational technology company developing
+                AI-powered learning tools. As CEO, he leads the company's efforts to create personalized learning
+                experiences through machine learning and natural language processing technologies.</p>
+
+            <p>His work focuses on making education more accessible through technological innovation. EVHEMANTH has been
+                recognized for his entrepreneurial achievements, including being featured on Google as an entrepreneur
+                and receiving an invitation to the Global Student Entrepreneur Awards (GSEA).</p>
+
+            <h3>EVTECH GROUPS</h3>
+            <p>EVTECH GROUPS specializes in developing artificial intelligence solutions for education. The company's
+                products aim to automate administrative tasks for educators while providing personalized learning
+                pathways for students.</p>
+
+            <h2>Public recognition</h2>
+            <p>EVHEMANTH has been recognized as a young innovator in the field of educational technology. He was
+                recognized on
+                many Platforms for his expertise in various technologies and also the company was recognized as the top
+                7 IT companies in India in april 2025 by <a href="https://www.f6s.com/companies/it/india/co">F6S</a>.
+            </p>
+
+            <h2>Personal life</h2>
+            <p>EVHEMANTH continues to balance his entrepreneurial pursuits with his education. His work has been noted
+                as an example of youth-led innovation in the Indian technology sector.</p>
+
+            <h2>Awards and honors</h2>
+            <ul>
+                <li>Recognized on Google as an Entrepreneur</li>
+                <li>Invited to Global Student Entrepreneur Awards (GSEA)</li>
+            </ul>
+
+            <h2>See also</h2>
+            <ul>
+                <li><a href="https://en.wikipedia.org/wiki/Educational_technology">Educational technology</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/Artificial_intelligence_in_education">Artificial intelligence
+                        in education</a></li>
+                <li><a href="https://en.wikipedia.org/wiki/List_of_youngest_businesspeople">List of youngest
+                        businesspeople</a></li>
+            </ul>
+
+            <div class="external-links">
+                <h2>External links</h2>
+                <ul>
+                    <li><a href="https://evhemanthsai.com">Official website</a></li>
+                    <li><a href="https://evtechgroups.com">EVTECH GROUPS website</a></li>
+                    <li><a href="https://linkedin.com/in/evhemanthsai">LinkedIn profile</a></li>
+                    <li><a href="https://twitter.com/evhemanthsai">Twitter profile</a></li>
+                    <li><a href="https://github.com/evhemanthsai">GitHub profile</a></li>
+                    <li><a href="https://www.wikidata.org/wiki/Q132735948">Wikidata entry</a></li>
+                </ul>
+            </div>
+
+            <div class="references">
+                <h2>References</h2>
+                <p>This article incorporates text from <a href="https://evhemanthsai.com">evhemanthsai.com</a> under
+                    Creative Commons Attribution-ShareAlike License.</p>
+            </div>
+        </main>
+
+        <footer>
+            <p>This page was last edited on 16 April 2024. Text is available under the <a
+                    href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons Attribution-ShareAlike
+                    License 3.0</a>; additional terms may apply.</p>
+        </footer>
+    </div>
+
+    <footer class="py-10 bg-black text-center">
+        <div class="max-w-6xl mx-auto px-6 md:px-10">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://evhemanthsai.com/ethics" class="text-gray-400 hover:text-cyan-400">Publishing
+                    Principles</a>
+                <a href="#" class="text-gray-400 hover:text-cyan-400">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-cyan-400">Terms of Use</a>
+            </div>
+            <p class="text-gray-400">Copyright © 2025 EVHEMANTH SAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+
+        function toggleMenu(open) {
+            mobileMenu.classList.toggle('active', open);
+            overlay.classList.toggle('active', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        }
+
+        menuToggle.addEventListener('click', () => toggleMenu(true));
+        closeMenu.addEventListener('click', () => toggleMenu(false));
+        overlay.addEventListener('click', () => toggleMenu(false));
+    </script>
+</body>
+
+</html>
