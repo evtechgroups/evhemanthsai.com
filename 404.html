@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found | EVHEMANTH SAI</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <style>
+        .mobile-menu {
+            position: fixed;
+            top: 0;
+            right: 0;
+            height: 100vh;
+            width: 75%;
+            max-width: 300px;
+            background: #111;
+            transform: translateX(100%);
+            transition: transform 0.3s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            z-index: 50;
+        }
+
+        .mobile-menu.active {
+            transform: translateX(0);
+        }
+
+        .overlay {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            opacity: 0;
+            visibility: hidden;
+            transition: opacity 0.3s ease-in-out;
+            z-index: 40;
+        }
+
+        .overlay.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .glow-text {
+            text-shadow: 0 0 10px rgba(79, 209, 197, 0.7);
+        }
+
+        .feature-card {
+            transition: all 0.3s ease;
+            border: 1px solid rgba(79, 209, 197, 0.2);
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 20px rgba(79, 209, 197, 0.1);
+            border-color: rgba(79, 209, 197, 0.5);
+        }
+    </style>
+</head>
+
+<body class="bg-gray-900 min-h-screen text-white">
+    <!-- Navbar (same as your main site) -->
+    <nav
+        class="flex justify-between items-center px-6 md:px-10 py-4 bg-gray-900 fixed top-0 left-0 right-0 z-50 border-b border-gray-800">
+        <a href="../" class="flex items-center space-x-3">
+            <img src="https://evhemanthsai.com/logo.png" alt="EVHEMANTH SAI Logo"
+                class="w-10 h-10 rounded-full object-cover">
+            <div>
+                <h1 class="text-lg font-bold text-cyan-400">EVHEMANTH SAI</h1>
+                <p class="text-sm text-gray-400">Founder & CEO of EVTECH GROUPS</p>
+            </div>
+        </a>
+        <button class="md:hidden text-cyan-400" id="menuToggle">
+            <i data-lucide="menu"></i>
+        </button>
+        <ul class="hidden md:flex space-x-6 font-medium text-gray-300">
+            <a href="https://evhemanthsai.com/about/" class="hover:text-cyan-400">About</a>
+        <li><a href="https://evhemanthsai.com/mediakit/" class="hover:text-cyan-400">Media Kit</a></li>
+        <li><a href="https://evhemanthsai.com/projects/" class="hover:text-cyan-400">Projects</a></li>
+        <li><a href="https://evhemanthsai.com/tools/" class="hover:text-cyan-400">Tools</a></li>
+        <li><a href="https://evhemanthsai.com/events/" class="hover:text-cyan-400">Events</a></li>
+        <li><a href="https://evhemanthsai.com/consulting/" class="hover:text-cyan-400">Consulting</a></li>
+        </ul>
+        <a href="https://linkedin.com/in/evhemanthsai"
+            class="hidden md:block bg-cyan-400 text-black px-4 py-2 rounded-lg hover:bg-cyan-500 transition-colors">
+            Join My Network
+        </a>
+    </nav>
+
+    <!-- Mobile Menu (same as your main site) -->
+    <div class="overlay" id="overlay"></div>
+    <div id="mobileMenu" class="mobile-menu">
+        <button class="absolute top-6 right-6 text-cyan-400" id="closeMenu">
+            <i data-lucide="x"></i>
+        </button>
+        <a href="https://evhemanthsai.com/about/" class="hover:text-cyan-400">About</a>
+        <a href="https://evhemanthsai.com/mediakit/" class="hover:text-cyan-400">Media Kit</a>
+        <a href="https://evhemanthsai.com/projects/" class="hover:text-cyan-400">Projects</a>
+        <a href="https://evhemanthsai.com/tools/" class="hover:text-cyan-400">Tools</a>
+        <a href="https://evhemanthsai.com/events/" class="hover:text-cyan-400">Events</a>
+        <a href="https://evhemanthsai.com/consulting/" class="hover:text-cyan-400">Consulting</a>
+        <a href="https://linkedin.com/in/evhemanthsai" class="bg-cyan-400 text-black px-6 py-3 rounded-lg hover:bg-cyan-500 transition-colors">
+            Join My Network
+        </a>
+    </div>
+
+    <!-- 404 Content -->
+    <main class="flex flex-col items-center justify-center min-h-screen px-4 py-20 text-center">
+        <div class="max-w-md mx-auto">
+            <!-- Logo with glow effect -->
+            <div class="mb-8 flex justify-center">
+                <img src="https://evhemanthsai.com/logo.png" alt="EVHEMANTH SAI Logo"
+                    class="w-32 h-32 rounded-full object-cover border-2 border-cyan-400 glow-text">
+            </div>
+
+            <!-- 404 Text -->
+            <h1 class="text-5xl font-bold text-cyan-400 mb-4">404</h1>
+            <h2 class="text-2xl font-semibold text-gray-300 mb-4">Page Not Found</h2>
+            <p class="text-gray-400 mb-8">
+                This page is currently under development. We're working hard to bring you amazing content soon!
+            </p>
+
+            <!-- Home Button -->
+            <a href="/"
+                class="inline-flex items-center bg-cyan-400 hover:bg-cyan-500 text-black font-medium py-3 px-6 rounded-lg transition-colors">
+                <i data-lucide="home" class="mr-2"></i>
+                Return to Homepage
+            </a>
+
+            <!-- Optional: Under Construction Illustration -->
+            <div class="mt-12 text-gray-500">
+                <i data-lucide="construction" class="w-16 h-16 mx-auto"></i>
+                <p class="mt-2">Under Construction</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer (same as your main site) -->
+    <footer class="py-10 bg-gray-900 text-center border-t border-gray-800">
+        <div class="max-w-6xl mx-auto px-6 md:px-10">
+            <div class="flex justify-center space-x-6 mb-6">
+                <a href="https://evhemanthsai.com/ethics" class="text-gray-400 hover:text-cyan-400">Publishing
+                    Principles</a>
+                <a href="#" class="text-gray-400 hover:text-cyan-400">Privacy Policy</a>
+                <a href="#" class="text-gray-400 hover:text-cyan-400">Terms of Use</a>
+            </div>
+            <p class="text-gray-400">Copyright © 2025 EVHEMANTH SAI. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+
+        // Mobile menu functionality
+        const menuToggle = document.getElementById('menuToggle');
+        const closeMenu = document.getElementById('closeMenu');
+        const mobileMenu = document.getElementById('mobileMenu');
+        const overlay = document.getElementById('overlay');
+
+        function toggleMenu(open) {
+            mobileMenu.classList.toggle('active', open);
+            overlay.classList.toggle('active', open);
+            document.body.style.overflow = open ? 'hidden' : '';
+        }
+
+        menuToggle.addEventListener('click', () => toggleMenu(true));
+        closeMenu.addEventListener('click', () => toggleMenu(false));
+        overlay.addEventListener('click', () => toggleMenu(false));
+
+        // Close menu when clicking on a link
+        document.querySelectorAll('#mobileMenu a').forEach(link => {
+            link.addEventListener('click', () => toggleMenu(false));
+        });
+    </script>
+</body>
+
+</html>
