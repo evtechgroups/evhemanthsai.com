@@ -4,4 +4,4 @@ Disallow: /private/
 Disallow: /tmp/
 Disallow: /admin/
 
-Sitemap: https://evhemanthsai.com/sitemap.xml
+Sitemap: https://www.evhemanthsai.com/sitemap.xml
