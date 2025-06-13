@@ -1,7 +1,2 @@
 User-agent: *
 Allow: /
-Disallow: /private/
-Disallow: /tmp/
-Disallow: /admin/
-
-Sitemap: https://www.evhemanthsai.com/sitemap.xml
